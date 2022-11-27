@@ -1,0 +1,260 @@
+//* ------------------------------ START FOOTER ------------------------------ */
+.footer {
+  padding: 112px 0;
+  background: #252525;
+  line-height: 1.8;
+  position: relative;
+  .container {
+    padding: 0;
+    .footerBox {
+      margin-bottom: 48px;
+      display: flex;
+      flex-wrap: wrap;
+      .footerCard {
+        position: relative;
+        min-height: 1px;
+        padding: 0 15px;
+        width: 100%;
+        .footerCardTitle {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 18px;
+          position: relative;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          line-height: 1.4;
+          font-weight: 400;
+          &::after {
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            content: "";
+            width: 70px;
+            height: 1px;
+            background: #fff;
+          }
+        }
+        .footerCardInfo {
+          margin-bottom: 24px;
+          p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-weight: 300;
+          }
+        }
+        .footerSocial {
+          margin: 48px 0 16px;
+          float: left;
+          display: flex;
+          .socialItem {
+            margin: 0 10px 0 0;
+            a {
+              position: relative;
+              background: rgba(255, 255, 255, 0.05);
+              color: #ffffff;
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 24px;
+              &:hover {
+                transition: all 0.3s ease;
+                color: #f86f2d;
+              }
+            }
+          }
+        }
+        .footerBlogCard {
+          margin-bottom: 24px;
+          display: flex;
+          .blogCardImg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 80px;
+            height: 80px;
+            margin-right: 24px;
+          }
+          .one {
+            background-image: url(../images/footerBlogImage1.jpg);
+          }
+          .two {
+            background-image: url(../images/footerBlogImage2.jpg);
+          }
+          .blogCardInfo {
+            width: calc(100% - 100px);
+            .blogInfoTitle {
+              line-height: 1.4;
+              margin-bottom: 8px;
+              a {
+                font-weight: 400;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.8);
+                transition: 0.3s all ease;
+                font-family: "Dosis", sans-serif;
+                &:hover {
+                  color: #f86f2d;
+                }
+              }
+            }
+            .blogInfoDate {
+              .blogDate,
+              .blogAuthor,
+              .blogComments {
+                display: inline-block;
+                font-size: 12px;
+                margin-right: 5px;
+                a {
+                  transition: 0.3s all ease;
+                  text-align: center;
+                  vertical-align: middle;
+                  i {
+                    color: #bfbfbf;
+                    font-size: 12px;
+                    transition: 0.3s all ease;
+                  }
+                  color: #808080;
+                  font-size: 12px;
+                  &:hover {
+                    color: #f86f2d;
+                    i {
+                      color: #f86f2d;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .footerNav {
+          margin-left: 24px;
+          margin-bottom: 24px;
+          .footerMenu {
+            margin-bottom: 16px;
+            .footerMenuItem {
+              padding: 8px 0;
+              .footerMenuLink {
+                color: rgba(255, 255, 255, 0.7);
+                transition: all 0.3s ease;
+                font-weight: 300;
+                &:hover {
+                  color: #ffffff;
+                }
+              }
+              .active {
+                color: #f86f2d;
+              }
+            }
+          }
+        }
+        .contactList {
+          margin-bottom: 16px;
+          .contactItem {
+            line-height: 1.5;
+            margin-bottom: 15px;
+            display: table;
+            a {
+              display: table;
+              line-height: 1.5;
+              margin-bottom: 15px;
+              color: #ffffff;
+              transition: 0.3s all ease;
+              i {
+                width: 40px;
+                font-size: 16px;
+                padding-top: 2px;
+                color: #ffffff;
+                display: table-cell;
+                vertical-align: top;
+                transition: 0.3s all ease;
+              }
+              span {
+                display: table-cell;
+                vertical-align: top;
+                color: rgba(255, 255, 255, 0.7);
+                font-weight: 300;
+                transition: 0.3s all ease;
+              }
+              &:hover {
+                color: #f86f2d;
+                i {
+                  color: #f86f2d;
+                }
+                span {
+                  color: #f86f2d;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sm {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+      }
+      .md {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      .xl {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+      .xxl {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .copyright {
+      .copyrightInfo {
+        padding: 0 15px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 16px;
+        text-align: center;
+        i:hover {
+          transition: all 0.3s ease;
+          color: #f86f2d;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+//* ------------------------------- END FOOTER ------------------------------- */
+
+//! ---------------------------- START MEDIA QUERY --------------------------- */
+
+//! 772px
+@media (max-width: 772px) {
+  .footer {
+    .container {
+      .footerBox {
+        .sm {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .md {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .xl {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .xxl {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .footerCard {
+          .footerNav {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+//! ----------------------------- END MEDIA QUERY ---------------------------- */

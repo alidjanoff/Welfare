@@ -1,5 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Overpass", sans-serif;
+}
+
+a {
+  transition: 0.3s all ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dosis", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+.header {
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 8px 16px;
+  height: 73.58px;
+}
+.header .container {
+  height: 100%;
+}
+.header .container .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.header .container .navBar .logo {
+  z-index: 9;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .container .navBar .logo a {
+  color: #ffffff;
+  padding: 5px 0;
+  margin-right: 16px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.header .container .navBar .navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .container .navBar .navList .navItem {
+  padding: 14.4px 20px;
+}
+.header .container .navBar .navList .navItem .navLink {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  opacity: 1;
+}
+.header .container .navBar .navList .navItem .navLink:hover {
+  color: #ffffff;
+}
+.header .container .navBar .navList .navItem .active {
+  color: #f86f2d;
+}
+.header .container .navBar .openMenu {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 0 4px 12px;
+  line-height: 1;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  z-index: 9;
+}
+.header .container .navBar .openMenu .menuIcon {
+  color: #bfbfbf;
+  font-size: 24px;
+}
+.header .container .navBar .openMenu span {
+  transform: translateY(2px);
+}
+.header .container .navBar .borderWhite {
+  border: 1px solid #ffffff;
+}
+.header .mobileMenu {
+  background-color: #000000;
+  width: 100%;
+  position: relative;
+  top: -508px;
+  z-index: 0;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.header .mobileMenu .container .menuItem {
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+}
+.header .mobileMenu .container .menuItem .menuLink {
+  padding: 14.4px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+.header .mobileMenu .container .menuItem .active {
+  color: #f86f2d;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin-top: -74px;
+}
+.scrolled .container .navBar .logo a {
+  color: #000000;
+}
+.scrolled .container .navBar .navList .navItem .navLink {
+  color: #000000;
+}
+.scrolled .container .navBar .navList .navItem .navLink:hover {
+  color: #000000;
+}
+.scrolled .container .navBar .navList .navItem .active {
+  color: #f86f2d;
+}
+
+.top {
+  transition: all 0.3s ease;
+  margin-top: 0;
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 48px;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 0;
+  }
+  .header .container .navBar .logo a {
+    color: #fff;
+  }
+  .header .container .navBar .navList {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  .header .container .navBar .navList .navItem .navLink {
+    color: #000000;
+  }
+  .header .container .navBar .navList .navItem .navLink:hover {
+    color: #000000;
+  }
+  .header .container .navBar .openMenu {
+    display: flex;
+  }
+  .header .mobileMenu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 0 15px;
+  }
+}
+.footer {
+  padding: 112px 0;
+  background: #252525;
+  line-height: 1.8;
+  position: relative;
+}
+.footer .container {
+  padding: 0;
+}
+.footer .container .footerBox {
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container .footerBox .footerCard {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  width: 100%;
+}
+.footer .container .footerBox .footerCard .footerCardTitle {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.footer .container .footerBox .footerCard .footerCardTitle::after {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  content: "";
+  width: 70px;
+  height: 1px;
+  background: #fff;
+}
+.footer .container .footerBox .footerCard .footerCardInfo {
+  margin-bottom: 24px;
+}
+.footer .container .footerBox .footerCard .footerCardInfo p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.footer .container .footerBox .footerCard .footerSocial {
+  margin: 48px 0 16px;
+  float: left;
+  display: flex;
+}
+.footer .container .footerBox .footerCard .footerSocial .socialItem {
+  margin: 0 10px 0 0;
+}
+.footer .container .footerBox .footerCard .footerSocial .socialItem a {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.footer .container .footerBox .footerCard .footerSocial .socialItem a:hover {
+  transition: all 0.3s ease;
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .footerBlogCard {
+  margin-bottom: 24px;
+  display: flex;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .one {
+  background-image: url(../images/footerBlogImage1.jpg);
+}
+.footer .container .footerBox .footerCard .footerBlogCard .two {
+  background-image: url(../images/footerBlogImage2.jpg);
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo {
+  width: calc(100% - 100px);
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoTitle {
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoTitle a {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s all ease;
+  font-family: "Dosis", sans-serif;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoTitle a:hover {
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogDate,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogAuthor,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogComments {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogDate a,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogAuthor a,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogComments a {
+  transition: 0.3s all ease;
+  text-align: center;
+  vertical-align: middle;
+  color: #808080;
+  font-size: 12px;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogDate a i,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogAuthor a i,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogComments a i {
+  color: #bfbfbf;
+  font-size: 12px;
+  transition: 0.3s all ease;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogDate a:hover,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogAuthor a:hover,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogComments a:hover {
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogDate a:hover i,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogAuthor a:hover i,
+.footer .container .footerBox .footerCard .footerBlogCard .blogCardInfo .blogInfoDate .blogComments a:hover i {
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .footerNav {
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.footer .container .footerBox .footerCard .footerNav .footerMenu {
+  margin-bottom: 16px;
+}
+.footer .container .footerBox .footerCard .footerNav .footerMenu .footerMenuItem {
+  padding: 8px 0;
+}
+.footer .container .footerBox .footerCard .footerNav .footerMenu .footerMenuItem .footerMenuLink {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  font-weight: 300;
+}
+.footer .container .footerBox .footerCard .footerNav .footerMenu .footerMenuItem .footerMenuLink:hover {
+  color: #ffffff;
+}
+.footer .container .footerBox .footerCard .footerNav .footerMenu .footerMenuItem .active {
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .contactList {
+  margin-bottom: 16px;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: table;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem a {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #ffffff;
+  transition: 0.3s all ease;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem a i {
+  width: 40px;
+  font-size: 16px;
+  padding-top: 2px;
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: top;
+  transition: 0.3s all ease;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem a span {
+  display: table-cell;
+  vertical-align: top;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  transition: 0.3s all ease;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem a:hover {
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem a:hover i {
+  color: #f86f2d;
+}
+.footer .container .footerBox .footerCard .contactList .contactItem a:hover span {
+  color: #f86f2d;
+}
+.footer .container .footerBox .sm {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+.footer .container .footerBox .md {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.footer .container .footerBox .xl {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+.footer .container .footerBox .xxl {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.footer .container .copyright .copyrightInfo {
+  padding: 0 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  text-align: center;
+}
+.footer .container .copyright .copyrightInfo i:hover {
+  transition: all 0.3s ease;
+  color: #f86f2d;
+  cursor: pointer;
+}
+
+@media (max-width: 772px) {
+  .footer .container .footerBox .sm {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer .container .footerBox .md {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer .container .footerBox .xl {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer .container .footerBox .xxl {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer .container .footerBox .footerCard .footerNav {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
