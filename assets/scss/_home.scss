@@ -1,1 +1,182 @@
 //* ------------------------------ Əli Hüseynov ------------------------------ */
+// Home page style start
+.homePage {
+  background-image: url(../images/home-bg.jpg);
+  background-position-x: 50%;
+  background-position-y: -25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 117px);
+  min-height: 700px;
+  position: relative;
+  .container {
+    .centerContent {
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .content {
+        text-align: center;
+        .contentHeading {
+          text-align: center;
+          font-size: 60px;
+          color: #fff;
+          line-height: 1.2;
+          font-weight: 400;
+          margin-bottom: 1.5rem;
+        }
+        .colorlibLink {
+          font-size: 20px;
+          line-height: 1.5;
+          font-weight: 300;
+          color: rgba(255, 255, 255, 0.8);
+          margin-bottom: 3rem;
+          a {
+            color: #fff;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+          }
+        }
+        .videoButton {
+          cursor: pointer;
+          font-size: 20px;
+          line-height: 1.5;
+          font-weight: 300;
+          color: rgba(255, 255, 255, 0.8);
+          margin-bottom: 1rem;
+          a {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 5px 20px -5px rgb(0 0 0 / 50%);
+            padding: 16px 24px;
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #fff;
+            i {
+              margin-right: 8px;
+            }
+            &:hover {
+              background-color: #fff;
+              color: #f86f2d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Home Page Style End
+
+// Counter Section Style Start
+.counter {
+  position: relative;
+  margin-top: -80px;
+  .container {
+    .counterCards {
+      display: flex;
+      .counterCard {
+        width: 100%;
+        background: #f86f2d;
+        padding: 30px;
+        color: #000;
+        .cardHeading {
+          font-size: 24px;
+        }
+        .cardNumber {
+          font-size: 60px;
+          font-weight: 300;
+        }
+        .cardContent {
+          font-size: 24px;
+          line-height: 1.8;
+          font-weight: 300;
+        }
+      }
+      .donateCard {
+        width: 100%;
+        background: #fa8f3d;
+        padding: 30px;
+        color: #000;
+        .cardHeading {
+          font-size: 1.75rem;
+          line-height: 1.4;
+          color: #000;
+          font-family: "Dosis", Arial, sans-serif;
+          font-weight: 400;
+          margin-bottom: 24px;
+        }
+        .cardContent {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 16px;
+          line-height: 1.8;
+          font-weight: 300;
+          margin-bottom: 16px;
+        }
+        .btn {
+          margin-bottom: 1rem;
+          .cardButton {
+            background: #fff;
+            border: 1px solid #fff;
+            color: #000;
+            box-shadow: 0 5px 20px -5px rgb(0 0 0 / 50%);
+            padding: 8px 16px;
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            &:hover {
+              background-color: #000;
+              color: #fff;
+              border: 1px solid #000;
+            }
+          }
+        }
+      }
+      .volunteerCard {
+        width: 100%;
+        background: #faaa3a;
+        padding: 30px;
+        color: #000;
+        .cardHeading {
+          font-size: 1.75rem;
+          line-height: 1.4;
+          color: #000;
+          font-family: "Dosis", Arial, sans-serif;
+          font-weight: 400;
+          margin-bottom: 24px;
+        }
+        .cardContent {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 16px;
+          line-height: 1.8;
+          font-weight: 300;
+          margin-bottom: 16px;
+        }
+        .btn {
+          margin-bottom: 1rem;
+          .cardButton {
+            background: #fff;
+            border: 1px solid #fff;
+            color: #000;
+            box-shadow: 0 5px 20px -5px rgb(0 0 0 / 50%);
+            padding: 8px 16px;
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            &:hover {
+              background-color: #000;
+              color: #fff;
+              border: 1px solid #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
