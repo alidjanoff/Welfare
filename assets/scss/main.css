@@ -120,7 +120,10 @@ h6 {
   display: none;
   justify-content: center;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   z-index: 9;
 }
@@ -884,7 +887,8 @@ h6 {
 .volunteer-section .container .row .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .volunteer-section .container .row .img {
@@ -917,6 +921,12 @@ h6 {
 .volunteer-section .container .row .volunteer-form form .form-group input {
   height: 58px;
   font-family: inherit;
+}
+.volunteer-section .container .row .volunteer-form form .form-group input::-moz-placeholder {
+  color: #fff;
+}
+.volunteer-section .container .row .volunteer-form form .form-group input:-ms-input-placeholder {
+  color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group input::placeholder {
   color: #fff;
@@ -958,6 +968,12 @@ h6 {
   height: inherit;
   overflow: auto;
   resize: vertical;
+}
+.volunteer-section .container .row .volunteer-form form .form-group textarea::-moz-placeholder {
+  color: #fff;
+}
+.volunteer-section .container .row .volunteer-form form .form-group textarea:-ms-input-placeholder {
+  color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group textarea::placeholder {
   color: #fff;
@@ -1043,7 +1059,7 @@ h6 {
 }
 
 /* ------------------------------ End first section ----------------------------- */
-/* ----------------------------- Start card section ---------------------------- */
+/* ----------------------------- Start Card section ---------------------------- */
 .donateCards {
   padding: 7rem 0;
   position: relative;
@@ -1205,7 +1221,7 @@ h6 {
   color: #000;
 }
 
-/* ------------------------------ End card section ----------------------------- */
+/* ------------------------------ End Card section ----------------------------- */
 main .blogPage {
   height: 700px;
   background-image: url(../images/blog-background.webp);
@@ -1289,7 +1305,8 @@ main .cards .container .card .card-info {
 main .cards .container .card .card-info .card-navigation {
   display: flex;
   justify-content: flex-start;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 main .cards .container .card .card-info .card-navigation a {
   font-size: 16px;
