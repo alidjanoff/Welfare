@@ -1322,9 +1322,6 @@ main .cards .container .card .card-info .card-info-text {
 }
 
 @media (max-width: 768px) {
-  main .cards {
-    width: 90%;
-  }
   main .cards .container {
     width: 90%;
   }
