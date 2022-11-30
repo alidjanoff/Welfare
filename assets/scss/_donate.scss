@@ -237,6 +237,9 @@
                     text-decoration: underline;
                     transition: 0.3s all ease;
                     color: #f86f2d;
+                    &:hover {
+                    color: #000;
+                    }
                   }
                 }
               }

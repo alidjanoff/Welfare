@@ -1209,6 +1209,9 @@ h6 {
   transition: 0.3s all ease;
   color: #f86f2d;
 }
+.donateCards .container .row-cards .mainCard .staff .card-flex .info .text p a:hover {
+  color: #000;
+}
 
 /* ------------------------------ End card section ----------------------------- */
 main .blogPage {
