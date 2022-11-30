@@ -84,7 +84,7 @@
 }
 /* ------------------------------ End first section ----------------------------- */
 
-/* ----------------------------- Start card section ---------------------------- */
+/* ----------------------------- Start Card section ---------------------------- */
 .donateCards {
   padding: 7rem 0;
   position: relative;
@@ -237,6 +237,9 @@
                     text-decoration: underline;
                     transition: 0.3s all ease;
                     color: #f86f2d;
+                    &:hover {
+                    color: #000;
+                    }
                   }
                 }
               }
@@ -253,4 +256,4 @@
     //row-pagination end
   }
 }
-/* ------------------------------ End card section ----------------------------- */
+/* ------------------------------ End Card section ----------------------------- */
