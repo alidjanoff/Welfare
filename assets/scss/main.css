@@ -963,7 +963,7 @@ h6 {
   color: #fff;
 }
 
-/* ----------------------------- Start section-1 ---------------------------- */
+/* ----------------------------- Start first section ---------------------------- */
 .donatePage .hero-wrap {
   background-image: url(../images/donate-hero.webp);
   background-position: 50% -25px;
@@ -1042,8 +1042,8 @@ h6 {
   margin-top: 0;
 }
 
-/* ------------------------------ End Section-1 ----------------------------- */
-/* ----------------------------- Start section-2 ---------------------------- */
+/* ------------------------------ End first section ----------------------------- */
+/* ----------------------------- Start card section ---------------------------- */
 .donateCards {
   padding: 7rem 0;
   position: relative;
@@ -1202,7 +1202,7 @@ h6 {
   color: #f86f2d;
 }
 
-/* ------------------------------ End section-2 ----------------------------- */
+/* ------------------------------ End card section ----------------------------- */
 main .blogPage {
   height: 700px;
   background-image: url(../images/blog-background.webp);
