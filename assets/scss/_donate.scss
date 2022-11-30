@@ -1,1 +1,90 @@
 //* ------------------------------ Rəsul Ağaməmmədli ------------------------------ */
+
+/* ----------------------------- Start section-1 ---------------------------- */
+.donatePage {
+  .hero-wrap {
+    background-image: url(../images/donate-hero.webp);
+    background-position: 50% -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 1s ease;
+    width: 100%;
+    height: calc(100vh - 117px);
+    min-height: 700px;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      opacity: 0;
+      background: #000;
+    }
+    .container {
+      .row-donate {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        color: #fff;
+        height: 700px;
+        .main-head {
+          transform: translateZ(0px) translateY(0%);
+          padding: auto 0;
+          text-align: center;
+          flex: 0 0 58.33333%;
+          max-width: 58.33333%;
+          position: relative;
+          width: 100%;
+          min-height: 1px;
+          .breadcrumbs {
+            opacity: 1;
+            transform: translateZ(0px) translateY(0%);
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            z-index: 99;
+            line-height: 1.5;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0;
+            .home {
+              border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+              color: rgba(255, 255, 255, 0.7);
+              margin-right: 0.5rem;
+              a {
+                color: #fff;
+                transition: 0.3s all ease;
+              }
+            }
+            span {
+              border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+              color: rgba(255, 255, 255, 0.7);
+            }
+          }
+          .bread {
+            opacity: 1;
+            transform: translateZ(0px) translateY(0%);
+            font-weight: 400;
+            font-size: 60px;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* ------------------------------ End Section-1 ----------------------------- */
+
+
+/* ----------------------------- Start section-2 ---------------------------- */
+
+/* ------------------------------ End section-2 ----------------------------- */
