@@ -1284,6 +1284,135 @@ h6 {
 }
 
 /* ------------------------------ End Card section ----------------------------- */
+/* ----------------------------- Start volunteer ---------------------------- */
+.volunteer {
+  background-image: url(../images/volunteer-bgd.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 8rem 0;
+  position: relative;
+}
+.volunteer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.9;
+  background: #f86f2d;
+}
+.volunteer .container .row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.volunteer .container .row-flex .left-side {
+  display: flex;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+}
+.volunteer .container .row-flex .left-side .image {
+  background-image: url(../images/volunteer-left.webp);
+  box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-self: stretch;
+}
+.volunteer .container .row-flex .right-side {
+  padding-left: 3rem;
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  position: relative;
+}
+.volunteer .container .row-flex .right-side .form-head {
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-family: "Dosis", Arial, sans-serif;
+  font-weight: 400;
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group {
+  margin-bottom: 1rem;
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group input {
+  height: 58px;
+  font-family: inherit;
+  overflow: visible;
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group .form-control {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  height: 58px;
+  outline: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, 0.15s ease-in-out;
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group textarea {
+  height: inherit;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 97px;
+  min-height: 97px;
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group .btn-white {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 3rem;
+  transition: all 0.5s;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.volunteer .container .row-flex .right-side .volunteer-form .form-group .btn-white:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+/* ------------------------------ End volunteer ----------------------------- */
 main .blogPage {
   height: 700px;
   background-image: url(../images/blog-background.webp);
