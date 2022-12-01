@@ -120,7 +120,10 @@ h6 {
   display: none;
   justify-content: center;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   z-index: 9;
 }
@@ -884,7 +887,8 @@ h6 {
 .volunteer-section .container .row .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .volunteer-section .container .row .img {
@@ -917,6 +921,12 @@ h6 {
 .volunteer-section .container .row .volunteer-form form .form-group input {
   height: 58px;
   font-family: inherit;
+}
+.volunteer-section .container .row .volunteer-form form .form-group input::-moz-placeholder {
+  color: #fff;
+}
+.volunteer-section .container .row .volunteer-form form .form-group input:-ms-input-placeholder {
+  color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group input::placeholder {
   color: #fff;
@@ -958,6 +968,12 @@ h6 {
   height: inherit;
   overflow: auto;
   resize: vertical;
+}
+.volunteer-section .container .row .volunteer-form form .form-group textarea::-moz-placeholder {
+  color: #fff;
+}
+.volunteer-section .container .row .volunteer-form form .form-group textarea:-ms-input-placeholder {
+  color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group textarea::placeholder {
   color: #fff;
@@ -1179,6 +1195,9 @@ h6 {
   font-weight: 400;
   transition: 0.3s all ease;
 }
+.donateCards .container .row-cards .mainCard .staff .card-flex .info h3 a:hover {
+  color: #f86f2d;
+}
 .donateCards .container .row-cards .mainCard .staff .card-flex .info .position {
   font-weight: 300;
   margin-bottom: 15px;
@@ -1203,6 +1222,65 @@ h6 {
 }
 .donateCards .container .row-cards .mainCard .staff .card-flex .info .text p a:hover {
   color: #000;
+}
+.donateCards .container .row-pagination {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+.donateCards .container .row-pagination .text-center {
+  text-align: center;
+  padding: 0 15px;
+  position: relative;
+  min-height: 1px;
+}
+.donateCards .container .row-pagination .text-center .block ul {
+  padding: 0;
+  margin: 0;
+}
+.donateCards .container .row-pagination .text-center .block ul li {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.donateCards .container .row-pagination .text-center .block ul li a {
+  color: #f86f2d;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fcc4a8;
+  transition: 0.3s all ease;
+}
+.donateCards .container .row-pagination .text-center .block ul li a:hover {
+  background-color: #f86f2d;
+  color: white;
+}
+.donateCards .container .row-pagination .text-center .block ul .active {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.donateCards .container .row-pagination .text-center .block ul .active span {
+  background: #fcc4a8;
+  color: #f86f2d;
+  border: 1px solid transparent;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+}
+.donateCards .container .row-pagination .text-center .block ul .active span:hover {
+  background-color: #f86f2d;
+  color: white;
 }
 
 /* ------------------------------ End Card section ----------------------------- */
@@ -1292,7 +1370,8 @@ main .cards .container .card .card-info {
 main .cards .container .card .card-info .card-navigation {
   display: flex;
   justify-content: flex-start;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 main .cards .container .card .card-info .card-navigation a {
   font-size: 16px;
@@ -1438,7 +1517,8 @@ main .blog-info .container .tips-category .left .about-author .image-author img 
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .blog-info .container .tips-category .left .about-author .info-author h3 {
   font-size: 24px;
@@ -1689,7 +1769,8 @@ main .blog-info .container .tips-category .right .recent-blogs .blog .image {
   align-items: center;
   display: block;
   margin-right: 24px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .blog-info .container .tips-category .right .recent-blogs .blog .image-2 {
   background-image: url(../images/recent-blog-2.webp);
