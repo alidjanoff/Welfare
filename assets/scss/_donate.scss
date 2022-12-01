@@ -1,1 +1,321 @@
 //* ------------------------------ Rəsul Ağaməmmədli ------------------------------ */
+
+/* ----------------------------- Start first section ---------------------------- */
+.donatePage {
+  .hero-wrap {
+    background-image: url(../images/donate-hero.webp);
+    background-position: 50% -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 1s ease;
+    width: 100%;
+    height: calc(100vh - 117px);
+    min-height: 700px;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      opacity: 0;
+      background: #000;
+    }
+    .container {
+      .row-donate {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        color: #fff;
+        height: 700px;
+        .main-head {
+          transform: translateZ(0px) translateY(0%);
+          padding: auto 0;
+          text-align: center;
+          flex: 0 0 58.33333%;
+          max-width: 58.33333%;
+          position: relative;
+          width: 100%;
+          min-height: 1px;
+          .breadcrumbs {
+            opacity: 1;
+            transform: translateZ(0px) translateY(0%);
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            z-index: 99;
+            line-height: 1.5;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0;
+            .home {
+              border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+              color: rgba(255, 255, 255, 0.7);
+              margin-right: 0.5rem;
+              a {
+                color: #fff;
+                transition: 0.3s all ease;
+              }
+            }
+            span {
+              border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+              color: rgba(255, 255, 255, 0.7);
+            }
+          }
+          .bread {
+            opacity: 1;
+            transform: translateZ(0px) translateY(0%);
+            font-weight: 400;
+            font-size: 60px;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* ------------------------------ End first section ----------------------------- */
+
+/* ----------------------------- Start Card section ---------------------------- */
+.donateCards {
+  padding: 7rem 0;
+  position: relative;
+  background: #fafafa;
+  .container {
+    //row-cards start
+    .row-cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      .mainCard {
+        display: flex;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        margin-bottom: 1.5rem;
+        min-height: 1px;
+        padding: 0 15px;
+        position: relative;
+        .staff {
+          padding: 25px;
+          background: #fff;
+          box-shadow: 0px 3px 66px -24px rgb(0 0 0 / 20%);
+          border-radius: 4px;
+          .card-flex {
+            display: flex;
+            margin-bottom: 1.5rem;
+            .image-1 {
+              background-image: url(../images/person_1.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-2 {
+              background-image: url(../images/person_2.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-3 {
+              background-image: url(../images/person_3.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-4 {
+              background-image: url(../images/person_4.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-5 {
+              background-image: url(../images/person_5.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-6 {
+              background-image: url(../images/person_6.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-7 {
+              background-image: url(../images/person_7.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-8 {
+              background-image: url(../images/person_8.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .image-9 {
+              background-image: url(../images/person_9.jpg.webp);
+              width: 110px;
+              height: 105px;
+              border: 4px solid #f0f0f0;
+              border-radius: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            .info {
+              width: calc(100% - 110px);
+              margin-left: 1.5rem;
+              h3 {
+                margin-bottom: 8px;
+                margin-top: 0;
+                a {
+                  font-size: 24px;
+                  font-family: "Dosis", Arial, sans-serif;
+                  line-height: 1.4;
+                  color: #000;
+                  font-weight: 400;
+                  transition: 0.3s all ease;
+                  &:hover {
+                    color: #f86f2d;
+                  }
+                }
+              }
+              .position {
+                font-weight: 300;
+                margin-bottom: 15px;
+                font-size: 14px;
+                color: #bfbfbf;
+              }
+              .text {
+                p {
+                  margin-top: 1.3rem;
+                  line-height: 1.8;
+                  font-weight: 300;
+                  color: gray;
+                  span {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #7cbd1e;
+                  }
+                  a {
+                    text-decoration: underline;
+                    transition: 0.3s all ease;
+                    color: #f86f2d;
+                    &:hover {
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    //row-cards end
+
+    // row-pagination start
+    .row-pagination {
+      width: 100%;
+      margin-top: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      justify-content: center; 
+      .text-center {
+        text-align: center;
+        padding: 0 15px;
+        position: relative;
+        min-height: 1px;
+        .block {
+          ul {
+            padding: 0;
+            margin: 0;
+            li {
+              display: inline-block;
+              margin-bottom: 4px;
+              font-weight: 400;
+              a {
+                color: #f86f2d;
+                text-align: center;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                border: 1px solid #fcc4a8;
+                transition: 0.3s all ease;
+                &:hover {
+                  background-color: #f86f2d;
+                  color: white;
+                }
+              }
+            }
+            .active {
+              display: inline-block;
+              margin-bottom: 4px;
+              font-weight: 400;
+              span {
+                background: #fcc4a8;
+                color: #f86f2d;
+                border: 1px solid transparent;
+                text-align: center;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                &:hover {
+                  background-color: #f86f2d;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    //row-pagination end
+  }
+}
+/* ------------------------------ End Card section ----------------------------- */
