@@ -59,18 +59,22 @@
         }
         .contact-top{
             display: flex;
+            flex-wrap: wrap;
             margin: 0 -15px;
-            margin-bottom: 64px;
+            margin-bottom: 48px;
             .contact-link{
-                padding: 0 15px;
                 width: 25%;
                 padding: 0 15px;
-                width: 25%;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 29px;
+                margin-bottom: 16px;
                 a{
                     color: #fa8f3d;
+                    transition: all .3s;
+                    &:hover{
+                        color: #f86f2d;
+                    }
                 }
                 .description{
                     font-size: 16px;
@@ -84,6 +88,7 @@
         }
         .bottom-container{
             display: flex;
+            flex-wrap: wrap;
             margin: 0 -15px;
             .contact-left{
                 width: 50%;
@@ -103,6 +108,11 @@
                             padding: 6px 12px;
                             font-size: 15px;
                             border: 1px solid #ced4da;
+                            outline: none;
+                            transition: all .3s;
+                            &:focus{
+                                border: 1px solid #000;
+                            }
                         }
                         textarea{
                             width: 100%;
@@ -110,6 +120,11 @@
                             padding: 6px 12px;
                             font-size: 15px;
                             border: 1px solid #ced4da;
+                            outline: none;
+                            transition: all .3s;
+                            &:focus{
+                                border: 1px solid #000;
+                            }
                         }
                     }
                     .btn{
@@ -135,9 +150,68 @@
                 }
             }
             .contact-right{
-                width: 570px;
+                width: 50%;
             }
         }
     }
 }
 // END CONTACT-QUESTIONS
+
+  // 992px
+  @media (max-width: 992px) {
+    // START CONTACT-HERO
+    .contact-hero{
+        .container{
+            .center-words{
+                .word{
+                    .hero-title{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+    // START CONTACT-QUESTIONS
+    .contact-questions{
+        .container{
+            .bottom-container{
+                .contact-right{
+                    iframe{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+  // 768px
+  @media (max-width: 768px) {
+    // START CONTACT-QUESTIONS
+    .contact-questions{
+        .container{
+            .contact-top{
+                .contact-link{
+                    width: 100%;
+                }
+            }
+            .bottom-container{
+                .contact-left{
+                    width: 100%;
+                    padding: 0 15px;
+                    form{
+                        width: 100%;
+                    }
+                }
+                .contact-right{
+                    width: 100%;
+                    iframe{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+  

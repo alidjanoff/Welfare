@@ -1655,20 +1655,26 @@ main .cards .container .card .card-info .card-info-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 -15px;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 .contact-questions .container .contact-top .contact-link {
-  padding: 0 15px;
   width: 25%;
   padding: 0 15px;
-  width: 25%;
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
+  margin-bottom: 16px;
 }
 .contact-questions .container .contact-top .contact-link a {
   color: #fa8f3d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact-questions .container .contact-top .contact-link a:hover {
+  color: #f86f2d;
 }
 .contact-questions .container .contact-top .contact-link .description {
   font-size: 16px;
@@ -1682,6 +1688,8 @@ main .cards .container .card .card-info .card-info-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 -15px;
 }
 .contact-questions .container .bottom-container .contact-left {
@@ -1703,6 +1711,12 @@ main .cards .container .card .card-info .card-info-text {
   padding: 6px 12px;
   font-size: 15px;
   border: 1px solid #ced4da;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact-questions .container .bottom-container .contact-left form .form-group input:focus {
+  border: 1px solid #000;
 }
 .contact-questions .container .bottom-container .contact-left form .form-group textarea {
   width: 100%;
@@ -1710,6 +1724,12 @@ main .cards .container .card .card-info .card-info-text {
   padding: 6px 12px;
   font-size: 15px;
   border: 1px solid #ced4da;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact-questions .container .bottom-container .contact-left form .form-group textarea:focus {
+  border: 1px solid #000;
 }
 .contact-questions .container .bottom-container .contact-left form .btn {
   color: #fff;
@@ -1734,9 +1754,35 @@ main .cards .container .card .card-info .card-info-text {
   border-color: #f86f2d;
 }
 .contact-questions .container .bottom-container .contact-right {
-  width: 570px;
+  width: 50%;
 }
 
+@media (max-width: 992px) {
+  .contact-hero .container .center-words .word .hero-title {
+    font-size: 40px;
+  }
+  .contact-questions .container .bottom-container .contact-right iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-questions .container .contact-top .contact-link {
+    width: 100%;
+  }
+  .contact-questions .container .bottom-container .contact-left {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .contact-questions .container .bottom-container .contact-left form {
+    width: 100%;
+  }
+  .contact-questions .container .bottom-container .contact-right {
+    width: 100%;
+  }
+  .contact-questions .container .bottom-container .contact-right iframe {
+    height: 300px;
+  }
+}
 main .blog-detail {
   height: 700px;
   background-image: url(../images/blog-background.webp);
