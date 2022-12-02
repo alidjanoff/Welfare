@@ -120,10 +120,7 @@ h6 {
   display: none;
   justify-content: center;
   align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
   z-index: 9;
 }
@@ -704,14 +701,21 @@ h6 {
 }
 
 .causes-card-section {
+  width: auto;
   padding: 7em 0;
   position: relative;
 }
 .causes-card-section .row-top {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+@media (max-width: 768px) {
+  .causes-card-section .row-top {
+    margin: 0;
+  }
 }
 .causes-card-section .row-top .causes-cards {
   margin-bottom: 5px;
@@ -872,11 +876,17 @@ h6 {
   height: 100%;
 }
 .volunteer-section .container .row {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+@media (max-width: 768px) {
+  .volunteer-section .container .row {
+    margin: 0;
+  }
 }
 .volunteer-section .container .row .img {
   width: 100%;
@@ -887,8 +897,7 @@ h6 {
 .volunteer-section .container .row .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .volunteer-section .container .row .img {
@@ -916,17 +925,12 @@ h6 {
   color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group {
+  width: 100%;
   margin-bottom: 1rem;
 }
 .volunteer-section .container .row .volunteer-form form .form-group input {
   height: 58px;
   font-family: inherit;
-}
-.volunteer-section .container .row .volunteer-form form .form-group input::-moz-placeholder {
-  color: #fff;
-}
-.volunteer-section .container .row .volunteer-form form .form-group input:-ms-input-placeholder {
-  color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group input::placeholder {
   color: #fff;
@@ -968,12 +972,6 @@ h6 {
   height: inherit;
   overflow: auto;
   resize: vertical;
-}
-.volunteer-section .container .row .volunteer-form form .form-group textarea::-moz-placeholder {
-  color: #fff;
-}
-.volunteer-section .container .row .volunteer-form form .form-group textarea:-ms-input-placeholder {
-  color: #fff;
 }
 .volunteer-section .container .row .volunteer-form form .form-group textarea::placeholder {
   color: #fff;
@@ -1305,8 +1303,7 @@ main .cards .container .card .card-info {
 main .cards .container .card .card-info .card-navigation {
   display: flex;
   justify-content: flex-start;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 main .cards .container .card .card-info .card-navigation a {
   font-size: 16px;
