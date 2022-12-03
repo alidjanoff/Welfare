@@ -15,11 +15,11 @@ main {
         margin-bottom: 20px;
         a {
           color: #fff;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.3);
           margin-right: 10px;
           font-size: 13px;
           letter-spacing: 1px;
           line-height: 1.5;
-          border-bottom: 2px solid rgba(255, 255, 255, 0.4);
           font-weight: 300;
         }
         span {
@@ -29,15 +29,14 @@ main {
           font-weight: 300;
         }
         .nav-blog {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2);
           color: rgba(255, 255, 255, 0.9);
-          a {
-            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-          }
+          margin-right: 10px;
         }
         .nav-blog-details {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
           color: rgba(255, 255, 255, 0.7);
           font-size: 13px;
-          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         }
       }
       h2 {
@@ -53,10 +52,9 @@ main {
       .tips-category {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         .left {
           width: 66%;
-          padding: 7em 15px;
+          padding: 7em 0;
           .left-info {
             .tip {
               line-height: 1.4;
@@ -91,10 +89,10 @@ main {
                 border: 1px solid #ccc;
                 font-size: 11px;
                 cursor: pointer;
-                &:hover {
-                  border: 1px solid black;
+                &:hover{
+                    border:1px solid black;
                 }
-              }
+            }
             }
           }
           .about-author {
@@ -106,10 +104,8 @@ main {
               margin-right: 3rem;
               width: 80%;
               img {
-                max-width: 100%;
-                height: auto;
+                width: 100%;
                 margin-bottom: 1.5rem;
-                object-fit: cover;
               }
             }
             .info-author {
@@ -215,7 +211,6 @@ main {
               padding: 48px;
               .form-row {
                 margin-bottom: 16px;
-                
                 label {
                   margin-bottom: 0.5rem;
                   font-size: 16px;
@@ -232,11 +227,9 @@ main {
                   padding: 0.375rem 0.75rem;
                   line-height: 1.5;
                   border: 1px solid #ced4da;
-                  &:focus {
-                    outline: none;
-                    border: 1px solid black;
+                  &:focus{
+                    border: 1px solid red;
                   }
-                  
                 }
                 .textarea {
                   background: #fff;
@@ -246,10 +239,6 @@ main {
                   padding: 0.375rem 0.75rem;
                   line-height: 1.5;
                   border: 1px solid #ced4da;
-                  &:focus {
-                    outline: none;
-                    border: 1px solid black;
-                  }
                 }
               }
               button {
@@ -260,222 +249,8 @@ main {
                 padding: 1rem 1.5rem;
                 font-size: inherit;
                 box-shadow: 0 5px 20px -5px rgb(0 0 0 / 50%);
-                &:hover {
-                  background-color: white;
-                  color: #f86f2d;
-                  transition: 0.3s;
-                }
               }
             }
-          }
-        }
-        .right {
-          width: 34%;
-          padding: 112px 15px;
-          .side-bar {
-            margin-bottom: 30px;
-            padding: 25px;
-            font-size: 15px;
-            width: 100%;
-            float: left;
-            background: #fff;
-            .form {
-              width: 100%;
-              background: #f2f2f2;
-              padding: 10px;
-              font-size: 15px;
-              .input {
-                width: 100%;
-                height: 58px !important;
-                background: #fff !important;
-                color: #000 !important;
-                font-size: 18px;
-                width: 100%;
-                padding: 0.375rem 0.75rem;
-                line-height: 1.5;
-                border: 1px solid #ced4da;
-                padding-right: 50px;
-              }
-            }
-          }
-          .categories {
-            margin-bottom: 30px;
-            padding: 25px;
-            font-size: 15px;
-            width: 100%;
-            background: #fff;
-            h3 {
-              font-size: 18px;
-              margin-bottom: 15px;
-              line-height: 1.4;
-              color: #000;
-              font-weight: 400;
-            }
-            li {
-              position: relative;
-              margin-bottom: 10px;
-              padding-bottom: 10px;
-              border-bottom: 1px dotted #dee2e6;
-              a {
-                left: 0;
-                color: #f86f2d;
-                cursor: pointer;
-                font-size: 15px;
-                line-height: 1.8;
-                font-weight: 300;
-              }
-              span {
-                position: absolute;
-                right: 0;
-                color: #ccc;
-                font-size: 15px;
-                line-height: 1.8;
-                font-weight: 300;
-              }
-            }
-            li:last-child {
-              border-bottom: none;
-            }
-          }
-          .recent-blogs {
-            margin-bottom: 30px;
-            padding: 25px;
-            font-size: 15px;
-            width: 100%;
-            float: left;
-            background: #fff;
-            h3 {
-              font-size: 18px;
-              margin-bottom: 15px;
-              line-height: 1.4;
-              color: #000;
-              font-weight: 400;
-            }
-            .blog {
-              display: flex;
-              margin-bottom: 1.5rem;
-              .image {
-                background-image: url(../images/recent-blog-1.webp);
-                height: 80px;
-                width: 108px;
-                background-position: center below;
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                display: block;
-                margin-right: 24px;
-                object-fit: cover;
-              }
-              .image-2 {
-                background-image: url(../images/recent-blog-2.webp);
-              }
-              .image-3 {
-                background-image: url(../images/recent-blog-3.webp);
-              }
-              .blog-info {
-                width: 70%;
-                p {
-                  cursor: pointer;
-                  font-size: 18px;
-                  margin-bottom: 15px;
-                  font-family: "Dosis", Arial, sans-serif;
-                  line-height: 1.4;
-                  color: #000;
-                  font-weight: 400;
-                  &:hover {
-                    color: #f86f2d;
-                    transition: 0.3s;
-                  }
-                }
-                .date {
-                  font-family: "Overpass", Arial, sans-serif;
-                  color: gray;
-                  cursor: pointer;
-                  font-size: 12px;
-                  line-height: 1.8;
-                  font-weight: 300;
-                  .icon {
-                    color: gray;
-                    cursor: pointer;
-                    font-size: 12px;
-                    line-height: 1.8;
-                    font-weight: 300;
-                  }
-                }
-              }
-            }
-          }
-          .tag-cloud {
-            padding: 1.5rem;
-            h3 {
-              font-size: 18px;
-              margin-bottom: 15px;
-              line-height: 1.4;
-              color: #000;
-              font-weight: 400;
-            }
-            .interests {
-              margin: 1rem 0;
-              .individual-interests {
-                font-size: 16px;
-                line-height: 1.8;
-                font-weight: 300;
-                a {
-                  padding: 4px 10px;
-                  margin-bottom: 7px;
-                  margin-right: 4px;
-                  border-radius: 4px;
-                  color: #000;
-                  border: 1px solid #ccc;
-                  font-size: 11px;
-                  cursor: pointer;
-                  &:hover {
-                    border: 1px solid black;
-                  }
-                }
-              }
-            }
-          }
-          .paragraph {
-            margin-bottom: 30px;
-            padding: 25px;
-            font-size: 15px;
-            width: 100%;
-            float: left;
-            background: #fff;
-            h3 {
-              font-size: 18px;
-              margin-bottom: 15px;
-              line-height: 1.4;
-              color: #000;
-              font-weight: 400;
-            }
-            p {
-              line-height: 1.8;
-              font-weight: 300;
-              color: gray;
-              font-size: 15px;
-              font-family: "Overpass", Arial, sans-serif;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  main {
-    .blog-info {
-      .container {
-        .tips-category {
-          .left {
-            width: 100%;
-          }
-          .right {
-            width: 100%;
           }
         }
       }

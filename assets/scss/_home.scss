@@ -6,6 +6,7 @@
   background-position-y: -25px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   height: calc(100vh - 117px);
   min-height: 700px;
@@ -180,3 +181,156 @@
     }
   }
 }
+// Counter Section Style End
+
+// Info Card Section Style Start
+.infoCards {
+  padding: 7em 0;
+  .container {
+    .infoCard {
+      display: flex;
+      justify-content: space-between;
+      // flex-wrap: wrap;
+      .card {
+        margin-bottom: 40px;
+        padding: 24px 31px;
+        display: flex;
+        align-items: flex-start;
+
+        .cardIcon {
+          font-size: 50px;
+          color: #f86f2d;
+        }
+        .cardContent {
+          padding-left: 24px;
+          h3 {
+            line-height: 1.4;
+            color: #000;
+            font-family: "Dosis", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 16px;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-weight: 300;
+            color: gray;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+// Info Card Section Style End
+
+//Causes Card Section Style Start
+.causes-card-section {
+  padding: 7em 0;
+  position: relative;
+      .sectionHeading {
+      margin: 0 -15px 48px -15px;
+      padding: 0 15px 16px 15px;
+      text-align: center;
+      .heading {
+        color: #000;
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+      }
+      .subheader {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 300;
+        color: gray;
+      }
+    }
+  .causeCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    .causesCard {
+      margin-bottom: 5px;
+      width: 100%;
+      height: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      @media (min-width: 768px) {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+      .causesImages {
+        height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      .img1 {
+        background-image: url(../images/causesPage/cause-1.jpg.webp);
+      }
+      .img2 {
+        background-image: url(../images/causesPage/cause-2.jpg.webp);
+      }
+      .img3 {
+        background-image: url(../images/causesPage/cause-3.jpg.webp);
+      }
+      .causesCardContent {
+        @media (min-width: 768px) {
+          margin-top: -40px !important;
+          background: #fff;
+          width: 90%;
+          margin: 0 auto;
+          padding: 1.5rem;
+        }
+        h3 {
+          margin-bottom: 20px;
+          line-height: 1.4;
+          font-family: "Dosis", Arial, sans-serif;
+          font-weight: 400;
+          font-size: 1.75rem;
+          a {
+            color: #000;
+          }
+        }
+        p {
+          margin-bottom: 1rem;
+          font-size: 16px;
+          line-height: 1.8;
+          font-weight: 300;
+          color: gray;
+        }
+        .lastDonation {
+          font-style: italic;
+          color: #cfcfcf;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+        .progressSection {
+          background-color: #f2f2f2;
+          height: 0.3rem;
+          border-radius: 4px;
+          margin-bottom: 20px;
+          .progress-bar {
+            width: 28%;
+            background: #f86f2d;
+            height: 100%;
+          }
+        }
+        .donationAmount {
+          color: #000;
+        }
+      }
+    }
+  }
+
+}
+////Causes Card Section Style End
