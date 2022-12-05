@@ -688,12 +688,12 @@ h6 {
   padding: 7em 0;
   position: relative;
 }
-.causes-card-section .sectionHeading {
+.causes-card-section .container .sectionHeading {
   margin: 0 -15px 48px -15px;
   padding: 0 15px 16px 15px;
   text-align: center;
 }
-.causes-card-section .sectionHeading .heading {
+.causes-card-section .container .sectionHeading .heading {
   color: #000;
   font-size: 34px;
   font-weight: 400;
@@ -701,7 +701,7 @@ h6 {
   line-height: 1.4;
   text-align: center;
 }
-.causes-card-section .sectionHeading .subheader {
+.causes-card-section .container .sectionHeading .subheader {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 16px;
@@ -709,13 +709,13 @@ h6 {
   font-weight: 300;
   color: gray;
 }
-.causes-card-section .causeCards {
+.causes-card-section .container .causeCards {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
-.causes-card-section .causeCards .causesCard {
+.causes-card-section .container .causeCards .causesCard {
   margin-bottom: 5px;
   width: 100%;
   height: 100%;
@@ -724,29 +724,29 @@ h6 {
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .causes-card-section .causeCards .causesCard {
+  .causes-card-section .container .causeCards .causesCard {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
 }
-.causes-card-section .causeCards .causesCard .causesImages {
+.causes-card-section .container .causeCards .causesCard .causesImages {
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-.causes-card-section .causeCards .causesCard .img1 {
+.causes-card-section .container .causeCards .causesCard .img1 {
   background-image: url(../images/causesPage/cause-1.jpg.webp);
 }
-.causes-card-section .causeCards .causesCard .img2 {
+.causes-card-section .container .causeCards .causesCard .img2 {
   background-image: url(../images/causesPage/cause-2.jpg.webp);
 }
-.causes-card-section .causeCards .causesCard .img3 {
+.causes-card-section .container .causeCards .causesCard .img3 {
   background-image: url(../images/causesPage/cause-3.jpg.webp);
 }
 @media (min-width: 768px) {
-  .causes-card-section .causeCards .causesCard .causesCardContent {
+  .causes-card-section .container .causeCards .causesCard .causesCardContent {
     margin-top: -40px !important;
     background: #fff;
     width: 90%;
@@ -754,41 +754,41 @@ h6 {
     padding: 1.5rem;
   }
 }
-.causes-card-section .causeCards .causesCard .causesCardContent h3 {
+.causes-card-section .container .causeCards .causesCard .causesCardContent h3 {
   margin-bottom: 20px;
   line-height: 1.4;
   font-family: "Dosis", Arial, sans-serif;
   font-weight: 400;
   font-size: 1.75rem;
 }
-.causes-card-section .causeCards .causesCard .causesCardContent h3 a {
+.causes-card-section .container .causeCards .causesCard .causesCardContent h3 a {
   color: #000;
 }
-.causes-card-section .causeCards .causesCard .causesCardContent p {
+.causes-card-section .container .causeCards .causesCard .causesCardContent p {
   margin-bottom: 1rem;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
   color: gray;
 }
-.causes-card-section .causeCards .causesCard .causesCardContent .lastDonation {
+.causes-card-section .container .causeCards .causesCard .causesCardContent .lastDonation {
   font-style: italic;
   color: #cfcfcf;
   display: inline-block;
   margin-bottom: 1rem;
 }
-.causes-card-section .causeCards .causesCard .causesCardContent .progressSection {
+.causes-card-section .container .causeCards .causesCard .causesCardContent .progressSection {
   background-color: #f2f2f2;
   height: 0.3rem;
   border-radius: 4px;
   margin-bottom: 20px;
 }
-.causes-card-section .causeCards .causesCard .causesCardContent .progressSection .progress-bar {
+.causes-card-section .container .causeCards .causesCard .causesCardContent .progressSection .progress-bar {
   width: 28%;
   background: #f86f2d;
   height: 100%;
 }
-.causes-card-section .causeCards .causesCard .causesCardContent .donationAmount {
+.causes-card-section .container .causeCards .causesCard .causesCardContent .donationAmount {
   color: #000;
 }
 
@@ -1393,13 +1393,14 @@ h6 {
 }
 .donateCards .container .row-pagination .text-center .block ul {
   display: flex;
+  justify-content: center;
 }
-.donateCards .container .row-pagination .text-center .block ul li {
+.donateCards .container .row-pagination .text-center .block ul .active {
   display: inline-block;
   margin-bottom: 4px;
   font-weight: 400;
 }
-.donateCards .container .row-pagination .text-center .block ul li span {
+.donateCards .container .row-pagination .text-center .block ul .active span {
   background: #fcc4a8;
   color: #f86f2d;
   border: 1px solid transparent;
@@ -1410,7 +1411,7 @@ h6 {
   line-height: 40px;
   border-radius: 50%;
 }
-.donateCards .container .row-pagination .text-center .block ul li span:hover {
+.donateCards .container .row-pagination .text-center .block ul .active span:hover {
   background-color: #f86f2d;
   color: #fff;
 }

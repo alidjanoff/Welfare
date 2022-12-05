@@ -265,7 +265,8 @@
         .block {
           ul {
             display: flex;
-            li {
+            justify-content: center;
+            .active {
               display: inline-block;
               margin-bottom: 4px;
               font-weight: 400;
@@ -284,6 +285,8 @@
                   color: #fff;
                 }
               }
+            }
+            li {
               a {
                 color: #f86f2d;
                 text-align: center;
@@ -303,6 +306,7 @@
         }
       }
     }
+
     //row-pagination end
   }
 }
