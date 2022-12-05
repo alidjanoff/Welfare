@@ -1391,15 +1391,15 @@ h6 {
   margin-left: -15px;
   justify-content: center;
 }
-.donateCards .container .row-pagination ul {
+.donateCards .container .row-pagination .text-center .block ul {
   display: flex;
 }
-.donateCards .container .row-pagination ul li {
+.donateCards .container .row-pagination .text-center .block ul li {
   display: inline-block;
   margin-bottom: 4px;
   font-weight: 400;
 }
-.donateCards .container .row-pagination ul li span {
+.donateCards .container .row-pagination .text-center .block ul li span {
   background: #fcc4a8;
   color: #f86f2d;
   border: 1px solid transparent;
@@ -1410,11 +1410,11 @@ h6 {
   line-height: 40px;
   border-radius: 50%;
 }
-.donateCards .container .row-pagination ul li span:hover {
+.donateCards .container .row-pagination .text-center .block ul li span:hover {
   background-color: #f86f2d;
   color: #fff;
 }
-.donateCards .container .row-pagination ul li a {
+.donateCards .container .row-pagination .text-center .block ul li a {
   color: #f86f2d;
   text-align: center;
   display: inline-block;
@@ -1424,7 +1424,7 @@ h6 {
   border-radius: 50%;
   border: 1px solid #fcc4a8;
 }
-.donateCards .container .row-pagination ul li a:hover {
+.donateCards .container .row-pagination .text-center .block ul li a:hover {
   background-color: #f86f2d;
   color: #fff;
 }
