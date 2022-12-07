@@ -1688,6 +1688,81 @@ main .cards .container .card .card-info .card-info-text {
   color: gray;
 }
 
+.galleryPage {
+  background-image: url(../images/gallery-images/backgroungImg1.jpg);
+  background-position: 50% -43.5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.galleryPage .galleryContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.galleryPage .galleryContent .pageMap a {
+  font-size: 60px;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.galleryPage .galleryContent h2 {
+  font-weight: 300;
+  font-size: 60px;
+  margin-top: 20px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.imageGallery {
+  padding-top: 7em;
+  position: relative;
+}
+.imageGallery .container .heroImage {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.imageGallery .container .heroImage img {
+  width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.registrationPage {
+  position: relative;
+}
+.registrationPage img {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.registrationPage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background: #f86f2d;
+}
+.registrationPage .overlay .container {
+  max-width: 1140px;
+}
+
 .contact-hero {
   background-image: url("../images/bg_2.jpg.webp");
   background-position: 50% -25px;
