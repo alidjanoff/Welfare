@@ -1,1 +1,165 @@
 //* ------------------------------ Ağasəf Mahmudlu ------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .container {
+    background-image: url(..//image/background.webp);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    .container-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      .text-link {
+        a {
+          color: #fff;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+          opacity: 0.7;
+          padding-left: 10px;
+        }
+      }
+      .main-text {
+        font-size: 30px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: 400;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    padding-top: 112px;
+    background-color: #f6f2f2;
+  
+    .card {
+      display: flex;
+      i {
+        color: orangered;
+        font-size: 12px;
+      }
+  
+      .card-box {
+        width: 100%;
+  
+        position: relative;
+        background-color: #f6f2f2;
+        padding: 0 15px;
+        width: 400px;
+        height: 625px;
+  
+        .card-image {
+          background-image: url(..//image/image1.webp);
+          width: 100%;
+          height: 270px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        .card-image2 {
+          background-image: url(../image/image2.webp);
+          width: 100%;
+          height: 270px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        .card-image3 {
+          background-image: url(../image/image3.webp);
+          width: 100%;
+          height: 270px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        .card-text {
+          border: 1px solid white;
+          background-color: white;
+          margin: 0 auto;
+          width: 90%;
+          margin: -40px 18px 0px;
+          padding: 24px;
+          position: absolute;
+          max-width: 313px;
+          
+          .data {
+            color: gray;
+            font-size: 15px;
+            margin-bottom: 1rem;
+            i {
+              color: gray;
+            }
+          }
+          .world {
+            color: black;
+            font-size: 20px;
+            margin-bottom: 24px; 
+            a{
+              color: black;
+            }
+          }
+          .time {
+            margin-bottom: 5px;
+            color: gray;
+          }
+          .camp {
+            margin-top: 8px;
+            margin-bottom: 16px;
+            color: gray;
+          }
+          .text1 {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: gray;
+            line-height: 1.8;
+            max-width:  293px;
+          }
+          .join {
+        
+            margin-bottom: 16px;
+            a{
+              color: orangered;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(
+      max-width:768px
+  ){
+      .card{
+          display: flex;
+          flex-wrap: wrap;
+          height: 300px;
+          .card-box{
+              max-width: 257px;
+              height: 300px;
+              display: flex;
+              justify-content: center;
+          }
+      }
+  }
+  @media(max-width:1220px){
+      .card{
+           width: 100%;
+           height: 100vh;
+           margin: 0 50px;
+              display: flex;
+              justify-content: center;
+          }
+      }
+  
+  
