@@ -634,6 +634,7 @@ h6 {
   background: #f86f2d;
   padding: 30px;
   color: #000;
+  line-height: 1.8;
 }
 .counter .container .counterCards .counterCard .cardHeading {
   font-size: 24px;
@@ -730,6 +731,12 @@ h6 {
   border: 1px solid #000;
 }
 
+@media (max-width: 768px) {
+  .counter .counterCards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .infoCards {
   padding: 7em 0;
 }
@@ -754,6 +761,8 @@ h6 {
 .infoCards .container .infoCard .card .cardIcon {
   font-size: 50px;
   color: #f86f2d;
+  width: 50px;
+  height: 90px;
 }
 .infoCards .container .infoCard .card .cardContent {
   padding-left: 24px;
@@ -775,9 +784,19 @@ h6 {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .infoCards .infoCard {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .infoCards .infoCard .card {
+    width: 100%;
+  }
+}
 .causes-card-section {
   padding: 7em 0;
   position: relative;
+  background-color: #fafafa;
 }
 .causes-card-section .sectionHeading {
   margin: 0 -15px 48px -15px;

@@ -85,6 +85,7 @@
         background: #f86f2d;
         padding: 30px;
         color: #000;
+        line-height: 1.8;
         .cardHeading {
           font-size: 24px;
         }
@@ -181,6 +182,14 @@
     }
   }
 }
+//768px
+@media (max-width: 768px){
+  .counter{
+    .counterCards{
+      flex-wrap: wrap;
+    }
+  }
+}
 // Counter Section Style End
 
 // Info Card Section Style Start
@@ -200,6 +209,8 @@
         .cardIcon {
           font-size: 50px;
           color: #f86f2d;
+          width: 50px;
+          height: 90px;
         }
         .cardContent {
           padding-left: 24px;
@@ -224,12 +235,24 @@
     }
   }
 }
+//768px
+@media (max-width: 768px){
+  .infoCards{
+    .infoCard{
+      flex-wrap: wrap;
+      .card{
+        width: 100%;
+      }
+    }
+  }
+}
 // Info Card Section Style End
 
 //Causes Card Section Style Start
 .causes-card-section {
   padding: 7em 0;
   position: relative;
+  background-color: #fafafa;
       .sectionHeading {
       margin: 0 -15px 48px -15px;
       padding: 0 15px 16px 15px;
