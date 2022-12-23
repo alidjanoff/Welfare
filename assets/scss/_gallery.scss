@@ -1,84 +1,168 @@
-//* ------------------------------ Səbinə İmanova ------------------------------ */
-
 // START 1ST PAGE
 .galleryPage {
-    background-image: url(../images/gallery-images/backgroungImg1.jpg);
-    background-position: 50% -43.5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 700px;
-    position: relative;
-    .galleryContent {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      .pageMap {
-        a {
-          font-size: 60px;
-          color: #fff;
-          border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-          margin-right: 10px;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 13px;
-          letter-spacing: 1px;
-          line-height: 1.5;
-          font-weight: 300;
-        }
-      }
-      h2 {
-        font-weight: 300;
+  background-image: url(../images/gallery-images/backgroungImg1.jpg);
+  background-position: 50% -43.5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  .galleryContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .pageMap {
+      a {
         font-size: 60px;
-        margin-top: 20px;
         color: #fff;
-        line-height: 1.2;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        margin-right: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-weight: 300;
+      }
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 60px;
+      margin-top: 20px;
+      color: #fff;
+      line-height: 1.2;
+    }
+  }
+}
+// END 1ST PAGE
+// START 2ND PAGE
+section {
+  padding-top: 7em;
+  position: relative;
+  .container {
+    .heroImage {
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 300;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      img {
+        width: 270px;
+        object-fit: cover;
       }
     }
   }
-  // END 1ST PAGE
-  // START 2ND PAGE
-  .imageGallery {
-    padding-top: 7em;
+}
+// END 2ND PAGE
+// START 3RD PAGE
+.registrationSection {
+  background-image: url(../images/gallery-images/registrationBack.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 8em 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "overlay";
+    opacity: 0.9;
+    background: #f86f2d;
+    z-index: 0;
+  }
+  .container {
     position: relative;
-    .container {
-      .heroImage {
-        font-size: 16px;
-        line-height: 1.8;
-        font-weight: 300;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+    height: 100%;
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .img {
+        width: 50%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
         img {
-          width: 270px;
+          width: 100%;
           object-fit: cover;
         }
       }
-    }
-  }
-  // END 2ND PAGE
-  // START 3RD PAGE
-  .registrationPage {
-    position: relative;
-    img {
-      background-size: cover;
-      background-position: center center;
-      position: relative;
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: .9;
-      background: #f86f2d;
-      .container {
-        max-width: 1140px;
-  }
+      .registrationForm {
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+        h3 {
+          font-size: 1.75rem;
+          line-height: 1.4;
+          font-weight: 400;
+          margin-bottom: 1rem;
+          color: #fff;
+        }
+        .registration-form {
+          margin-bottom: 1rem;
+          input {
+            border: none;
+            width: 507px;
+            height: 58px;
+            font-family: inherit;
+            &::placeholder {
+              color: #fff;
+            }
+            .button-white {
+              cursor: pointer;
+              background: #fff;
+              border: 1px solid #fff;
+              color: #000;
+              display: inline-block;
+              font-weight: 400;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: middle;
+              font-size: 1rem;
+              line-height: 1.5;
+              padding: 1rem 3rem;
+              transition: all 0.5s;
+              &:hover {
+                background-color: #000;
+                color: #fff;
+                border: 1px solid #000;
+              }
+              .registration-form1 {
+                border: 2px solid rgba(255, 255, 255, 0.7);
+                background: transparent;
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 18px;
+                padding: 0.375rem 0.75rem;
+                width: 100%;
+                line-height: 1.5;
+                outline: none;
+                &:focus {
+                  border-color: #fff;
+                }
+              }
+              textarea {
+                height: inherit;
+                overflow: auto;
+                resize: vertical;
+                &::placeholder {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
       }
     }
-  // END 3RD PAGE
-  
+  }
+}
+// END 3RD PAGE
